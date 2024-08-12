@@ -25,14 +25,14 @@
   z-index: -2;
 }
 
-@media (max-width: 2560px) {
+/* @media (max-width: 2560px) {
   .brand::after {
     width: 25%;
   }
   .brand::before {
     width: 25%;
   }
-}
+} */
 
 @media (max-width: 1440px) {
   .brand::after {
@@ -47,4 +47,11 @@
   .brand::after {
     width: 100%;
   }
+}
+
+.showwer {
+  display: none;
+}
+.hidden-shown:hover .showwer {
+  display: block;
 }

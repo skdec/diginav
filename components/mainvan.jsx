@@ -5,6 +5,7 @@ import { ContactData, SocialIcons } from "@/data/navigation/nav";
 import { FaAngleDown } from "react-icons/fa6";
 import Hamburger from "hamburger-react";
 import { useState } from "react";
+import Dropdown from "./dropdown";
 
 const MainNav = () => {
   return (
@@ -49,6 +50,7 @@ export default MainNav;
 
 const Nav = () => {
   const [isOpen, setOpen] = useState(false);
+
   return (
     <>
       <section className="brand relative  ">
@@ -67,9 +69,10 @@ const Nav = () => {
               <li>
                 <Link href="#">Home</Link>
               </li>
-              <li>
-                <Link href="#" className="flex items-center gap-1">
+              <li className="hidden-shown">
+                <Link href="#" className="flex  items-center gap-1">
                   Courses <FaAngleDown />
+                  <Dropdown isHidden={isOpen} />
                 </Link>
               </li>
               <li>
