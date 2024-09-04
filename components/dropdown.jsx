@@ -1,11 +1,11 @@
 "use client";
 
-import { Course } from "@/data/navigation/courses";
+// import { Course } from "@/data/navigation/courses";
 import Link from "next/link";
 import React, { useState } from "react";
-import { SiStudyverse } from "react-icons/si";
+// import { SiStudyverse } from "react-icons/si";
 
-const Dropdown = ({ isHidden }) => {
+const Dropdown = () => {
   const [whichDataTobeShown, usewhichDataTobeShown] = useState("DMM");
 
   const handleToDataShown = (data) => {
@@ -14,7 +14,7 @@ const Dropdown = ({ isHidden }) => {
 
   return (
     <>
-      <div className="container mx-auto  absolute top-[65px] left-0 right-0 ">
+      <div className="container mx-auto showwer  absolute top-[80px] left-0 right-0 ">
         <div className="flex min-h-[20rem]">
           <div className="flex-[3] bg-green-200">
             <ul className="p-2">

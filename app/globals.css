@@ -25,15 +25,6 @@
   z-index: -2;
 }
 
-/* @media (max-width: 2560px) {
-  .brand::after {
-    width: 25%;
-  }
-  .brand::before {
-    width: 25%;
-  }
-} */
-
 @media (max-width: 1440px) {
   .brand::after {
     width: 30%;

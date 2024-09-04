@@ -72,7 +72,7 @@ const Nav = () => {
               <li className="hidden-shown">
                 <Link href="#" className="flex  items-center gap-1">
                   Courses <FaAngleDown />
-                  <Dropdown isHidden={isOpen} />
+                  <Dropdown />
                 </Link>
               </li>
               <li>
